@@ -1,0 +1,14 @@
+{
+  "name": "Airflow Standalone",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Airflow UI",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/start.sh",
+  "remoteUser": "vscode"
+}
