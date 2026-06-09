@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-#mkdir -p /workspaces/airflow-aws/dags
+mkdir -p /workspaces/airflow-aws/dags
 
 export AIRFLOW_HOME=~/airflow
 AIRFLOW_VERSION=2.9.0
